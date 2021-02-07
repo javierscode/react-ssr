@@ -5,6 +5,7 @@ const HTMLSkeleton = ({children, scripts})=>(
         <head>
             <meta charSet="UTF-8"/>
             <title>Server Side Rendering with React</title>
+            <script defer src="/public/bundle.js" />
         </head>
         <body>
             <div id="app" dangerouslySetInnerHTML={{__html: children}}>

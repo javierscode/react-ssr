@@ -4,13 +4,14 @@
   "description": "Project to test the server side rendering using reactjs and expressjs",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "npm run build && npm run watch",
+    "watch": "nodemon index.js",
+    "build": "esbuild client.js --define:process.env.NODE_ENV=\\'development\\' --bundle --loader:.js=jsx --outfile=public/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "esbuild": "^0.8.42",
     "express": "^4.17.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
@@ -20,6 +21,7 @@
     "@babel/preset-env": "^7.12.13",
     "@babel/preset-react": "^7.12.13",
     "@babel/register": "^7.12.13",
+    "esbuild": "^0.8.42",
     "nodemon": "^2.0.7"
   }
 }

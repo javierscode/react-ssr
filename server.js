@@ -2,10 +2,12 @@ import express from 'express'
 import React from 'react'
 import ReactDOM from 'react-dom/server'
 import Skeleton from "./Skeleton";
-import ReactApp from './src/app'
+import ReactApp from './src/App'
 
 const app = express()
 const port = 3000
+
+app.use('/public', express.static(__dirname + '/public'));
 
 app.get('*', (req, res) => {
 
