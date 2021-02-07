@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HTML = ({children, scripts})=>(
+const HTMLSkeleton = ({children, scripts})=>(
     <html>
         <head>
             <meta charSet="UTF-8"/>
@@ -14,4 +14,4 @@ const HTML = ({children, scripts})=>(
     </html>
 )
 
-export default HTML;
+export default HTMLSkeleton;

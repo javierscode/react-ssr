@@ -1,9 +1,8 @@
-
 import express from 'express'
 import React from 'react'
 import ReactDOM from 'react-dom/server'
-import HTML from "./html";
-import ReactApp from './app'
+import Skeleton from "./Skeleton";
+import ReactApp from './src/app'
 
 const app = express()
 const port = 3000
@@ -11,7 +10,7 @@ const port = 3000
 app.get('*', (req, res) => {
 
   const renderedApp = ReactDOM.renderToString(<ReactApp/>)
-  const html = ReactDOM.renderToStaticMarkup(<HTML>{renderedApp}</HTML>)
+  const html = ReactDOM.renderToStaticMarkup(<Skeleton>{renderedApp}</Skeleton>)
   res.send(`<!doctype html>${html}`)
 })
 
