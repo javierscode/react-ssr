@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npm run build && npm run watch",
     "watch": "nodemon index.js",
-    "build": "esbuild client.js --define:process.env.NODE_ENV=\\'development\\' --bundle --loader:.js=jsx --outfile=public/bundle.js",
+    "build": "esbuild src/client.js --define:process.env.NODE_ENV=\\'development\\' --bundle --loader:.js=jsx --outfile=public/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

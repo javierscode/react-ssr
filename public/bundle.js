@@ -20625,7 +20625,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }
   });
 
-  // client.js
+  // src/client.js
   var import_react2 = __toModule(require_react());
   var import_react_dom = __toModule(require_react_dom());
 
@@ -20639,6 +20639,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   };
   var App_default = App;
 
-  // client.js
+  // src/client.js
   import_react_dom.default.hydrate(/* @__PURE__ */ import_react2.default.createElement(App_default, null), document.getElementById("app"));
 })();

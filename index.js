@@ -4,4 +4,4 @@ require("@babel/register")({
         "@babel/preset-react"
     ]
 })
-require("./server.js");
+require("./src/server.js");
